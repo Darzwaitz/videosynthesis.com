@@ -1,8 +1,15 @@
+//reset
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html {
     // 1 rem = 10px - 16 / 10
     font-size: 62.5%;
 
-    background-color: rgb(21, 151, 4);
     // @include respond(phone){
     //     font-size: 50%;
     // }
@@ -20,17 +27,14 @@ html {
     // }
 }
 
-//reset
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-body {
-    box-sizing: border-box;
+body {  
+    // box-sizing: inherit;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
 
     // padding: 1.4rem;
 
