@@ -30,6 +30,17 @@ COLORS:
   }
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* / ANIMATIONS */
 *,
 *::after,
@@ -68,6 +79,10 @@ h1 {
   color: #777;
 }
 
+.btn-white::after {
+  background-color: #fff;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -76,6 +91,7 @@ h1 {
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s;
+  position: relative;
 }
 
 .btn:hover {
@@ -83,9 +99,32 @@ h1 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.btn:hover::after {
+  transform: scaleX(1.6) scaleY(1.8);
+  opacity: 0;
+}
+
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-animated {
+  animation: moveInBottom .7s ease;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 .header {
