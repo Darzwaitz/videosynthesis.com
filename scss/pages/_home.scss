@@ -21,6 +21,7 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
 
 .heading-primary{
@@ -32,12 +33,25 @@
         font-size: 6rem;
         font-weight: 400;
         letter-spacing: 35px;
+        // animation         
+        // animation: moveInleft .8s timing-function delay iteration-count direction fill-mode;
+        // animation-name: moveInleft;
+        // animation-duration: 5s;
+        // animation-timing-function: ease-out;
+        animation: moveInLeft 1s ease-out;
+        backface-visibility: hidden;
+
     }
     &-sub{
         display: block;
         font-size: 2rem;
         font-weight: 700;
         letter-spacing: 17.4px;
+        // animation         
+        // animation: moveInleft .8s timing-function delay iteration-count direction fill-mode;
+        animation: moveInRight 1s ease-out;
+        margin-bottom: 6rem;
+        
     }
 
 }
