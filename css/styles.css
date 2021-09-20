@@ -103,6 +103,22 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  letter-spacing: 2px;
+  transition: all .4s;
+}
+
+.heading-secondary:hover {
+  transform: skewX(-22deg) scale(1.01);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4);
+  backface-visibility: hidden;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom {
+  margin-bottom: 8rem;
 }
 
 .btn--white {
@@ -185,9 +201,8 @@ body {
 }
 
 .row {
-  color: white;
+  color: #000;
   max-width: 114rem;
-  background-color: #9c5050;
   margin: 0 auto;
 }
 
@@ -202,7 +217,6 @@ body {
 }
 
 .row [class^="col-"] {
-  background-color: yellowgreen;
   float: left;
   float: left;
 }
@@ -237,7 +251,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 0 0 0;
   margin-top: -20vh;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,7 @@
 .row{
-    color: white;
+    color: $color-black;
     max-width: $grid-width;
-    background-color: rgb(156, 80, 80);
+    // background-color: rgb(156, 80, 80);
     margin: 0 auto;
     
 
@@ -14,7 +14,7 @@
     // attribute selector
     // grab all classes that start with col-
     [class^="col-"]{
-        background-color: yellowgreen;
+        // background-color: yellowgreen;
         float: left;
 
         &:not(:last-child){
