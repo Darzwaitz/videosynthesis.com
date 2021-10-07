@@ -48,7 +48,8 @@
         display: inline-block;
     }
     &__radio-input{
-        color: #000;
+        // color: #000;
+        @include visually-hidden;
     }
     &__radio-label{
         font-size: $default-font-size;

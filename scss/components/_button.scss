@@ -1,4 +1,5 @@
 .btn{
+    &,
     &--white{
         background-color: $color-white;
         color: $color-grey-dark;
@@ -24,6 +25,8 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+        border: none;
+        cursor: pointer;
     }
     &:hover{
         transform: translateY(-.3rem);
@@ -33,7 +36,9 @@
             opacity: 0;
         }
     }
-    &:active{
+    &:active,
+    &:focus{
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     }
