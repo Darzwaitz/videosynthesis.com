@@ -21,12 +21,11 @@ html {
 }
 
 body {  
-    // box-sizing: inherit;
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.7;
-    color: $color-grey-dark;
+    // box-sizing: inherit;    
     padding: 3rem;
     box-sizing: border-box;
+
+    @include respond(tab-port){
+        padding: 0;
+    }
 }
